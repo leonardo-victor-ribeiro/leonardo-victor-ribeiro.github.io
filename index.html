@@ -1,37 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leonardo Ribeiro</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="./css/styles.css" rel="stylesheet">
 </head>
 <body>
-    <!-- home -->
-    <nav>
-        <ul class="lg:flex lg:flex-row lg:flex-nowrap justify-end p-4 text-base font-semibold">
-            <li><a class="p-2 hover:underline hover:decoration-yellow-200 hover:decoration-solid hover:decoration-4 hover:underline-offset-4" href="#">//Sobre</a></li>
-            <li><a class="p-2 hover:underline hover:decoration-yellow-200 hover:decoration-solid hover:decoration-4 hover:underline-offset-4" href="#">// Projetos</a></li>
-            <li><a class="p-2 hover:underline hover:decoration-yellow-200 hover:decoration-solid hover:decoration-4 hover:underline-offset-4" href="#">// Contato</a></li>
+    <!-- nav -->
+    <nav class="relative">
+        <ul class="lg:flex lg:flex-row lg:flex-nowrap justify-end p-4 fixed top-0 right-0 left-0 text-base text-white font-medium bg-black">
+            <li><a class="p-2 hover:text-yellow-200" href="#about-me">// Sobre</a></li>
+            <li><a class="p-2 hover:text-yellow-200" href="#projetos">// Projetos</a></li>
+            <li><a class="p-2 hover:text-yellow-200" href="#contact">// Contato</a></li>
         </ul>
     </nav>
+    <!-- home -->
     <div class="max-w-7xl m-auto">
-        <section id="home" class="lg:mb-24 flex flex-row justify-center">
-            <div class="flex flex-col max-w-2/3 h-screen">
+        <section id="home" class="lg:mb-24 flex flex-row justify-center items-center h-screen">
+            <div class="flex flex-col max-w-2/3">
                 <h1 class="text-6xl font-bold mb-2 text-center">Leonardo Ribeiro</h1>
                 <h2 class="text-6xl font-bold mb-4 text-center">Software Developer</h2>
                 <p class="text-base mb-8 text-center">Estudante de Análise e Desenvolvimento de Sistemas apaixonado por criar soluções web eficientes e escaláveis. Buscando uma oportunidade de estágio para aplicar e expandir meus conhecimentos.</p>
                 <div class="font-semibold text-2xl flex flex-row justify-center">
-                    <a class="bg-yellow-200 border-2 border-black hover:drop-shadow-xs/100 text-black lg:mr-6 lg:mt-6 p-2 cursor-pointer" href="#">Ver Meus Projetos</a>
-                    <a class="bg-white border-2 border-black hover:drop-shadow-xs/100 text-black lg:mr-6 lg:mt-6 p-2 cursor-pointer" href="#">Entrar em Contato</a>
+                    <a class="bg-yellow-200 border-2 border-black hover:drop-shadow-xs/100 text-black lg:mr-6 lg:mt-6 p-2 cursor-pointer" href="#projetos">Ver Meus Projetos</a>
+                    <a class="bg-white border-2 border-black hover:drop-shadow-xs/100 text-black lg:mr-6 lg:mt-6 p-2 cursor-pointer" href="#contact">Entrar em Contato</a>
                 </div>
             </div>
         </section>
         <!-- sobre mim -->
-        <section id="about-me" class="lg:mb-24">
+        <section id="about-me" class="lg:mb-24 scroll-mt-24">
             <h2 class="lg:text-4xl font-bold lg:mb-12">// Sobre Mim</h2>
             <div id="profile" class="lg:flex lg:flex-nowrap lg:content-start">
-                <img class="max-w-233 h-auto lg:border-2 border-black drop-shadow-xs/100" src="/images/photo.png" alt="Foto de Leonardo Victor Ribeiro">
+                <img class="max-w-233 h-auto lg:border-2 border-black" src="/images/photo.png" alt="Foto de Leonardo Victor Ribeiro">
                 <div id="paragraph-box" class="text-justify lg:text-base flex flex-col justify-center max-w-2/5 lg:ml-8">
                     <p class="lg:mb-1 ">Sempre vi o código como uma das mais poderosas ferramentas de criação. A possibilidade de transformar uma ideia abstrata em um produto interativo e útil é o que me fascina.
                      Atualmente, no curso de Análise e Desenvolvimento de Sistemas do Instituto Federal do Triângulo Mineiro - IFTM, estou aprofundando nas bases teóricas para construir aplicações cada vez mais robustas e intuitivas.</p>
@@ -41,7 +42,7 @@
             </div>
         </section>
         <!-- projetos -->
-        <section id="projetos" class="lg:mb-24">
+        <section id="projetos" class="lg:mb-24 scroll-mt-24">
             <h2 class="lg:text-4xl font-bold lg:mb-12">// Projetos</h2>
             <div id="projects" class="lg:flex lg:flex-row lg:flex-nowrap lg:justify-between">
                 <!-- project -->
@@ -144,7 +145,7 @@
             </ul>
         </section>
         <!-- contact -->
-        <section id="contact">
+        <section id="contact" class="scroll-mt-24">
             <h2 class="lg:text-4xl font-bold lg:mb-12">// Contato</h2>
             <h3 class="lg:text-2xl font-semibold lg:mb-1">Vamos construir algo juntos?</h3>
             <p class="lg:text-lg font-normal">Estou buscando ativamente por uma vaga de estágio e adoraria conversar. Envie um e-mail.</p>
