@@ -1,1 +1,10 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+h1, h2, h3 {
+  font-family: 'Roboto Mono', monospace;
+}
